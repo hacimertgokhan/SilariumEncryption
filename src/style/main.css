@@ -1,0 +1,131 @@
+* {
+  background: #202020;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+.Encryption {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  flex-wrap: wrap;
+  place-items: center;
+  margin-top: 15px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.Encryption .Input p {
+  font-size: 20px;
+}
+.Encryption .Input .Types {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  gap: 3em;
+}
+.Encryption .Input .Types label {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.Encryption .Input .Types label button {
+  transition: 200ms;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #101010;
+  padding: 6px 18px;
+  border-radius: 4px;
+}
+.Encryption .Input .Types label button:hover {
+  box-shadow: 0 -1px 5px #101010;
+}
+.Encryption .Input .Output {
+  position: relative;
+  overflow: hidden;
+}
+.Encryption .Input .Output button {
+  transition: 200ms;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #101010;
+  padding: 6px 18px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+.Encryption .Input .Output button:hover {
+  box-shadow: 0 -1px 5px #101010;
+}
+.Encryption .Input .Output .Status {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  top: 0;
+}
+.Encryption .Input .Output .Main {
+  overflow: auto;
+  width: 325px;
+  background: #101010;
+  padding: 9px;
+  border-radius: 4px;
+  height: 35px;
+  margin-bottom: 5px;
+  scrollbar-width: none;
+}
+.Encryption .Input .Output .Main p {
+  background: #101010;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.Encryption .Input .Options {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  gap: 3em;
+}
+.Encryption .Input .Options label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+.Encryption .Input .Options label input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  margin-bottom: 5px;
+  background: #101010;
+}
+.Encryption .Input .Options label input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #21d57a;
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+.Encryption .Input .Options .Contains {
+  margin-top: -25px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.Encryption .Input .Options .Contains label {
+  background: transparent;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,129 @@
+
+* {
+  background: #202020;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+.Encryption {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  flex-wrap: wrap;
+  place-items: center;
+  margin-top: 15px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  .Input {
+    p {
+      font-size: 20px;
+    }
+    .Types {
+      margin-top: 15px;
+      width: 100%;
+      display: flex;
+      gap: 3em;
+      label {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        button {
+          transition: 200ms;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          background: #101010;
+          padding: 6px 18px;
+          border-radius: 4px;
+          &:hover {
+            box-shadow: 0 -1px 5px #101010;
+          }
+        }
+      }
+    }
+    .Output {
+      position: relative;
+      overflow: hidden;
+      button {
+        transition: 200ms;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: #101010;
+        padding: 6px 18px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        &:hover {
+          box-shadow: 0 -1px 5px #101010;
+        }
+      }
+      .Status {
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+        top: 0;
+      }
+      .Main {
+        overflow: auto;
+        width: 325px;
+        background: #101010;
+        padding: 9px;
+        border-radius: 4px;
+        height: 35px;
+        margin-bottom: 5px;
+        scrollbar-width: none;
+        p {
+          background: #101010;
+          border-radius: 4px;
+          font-size: 15px;
+        }
+      }
+    }
+    .Options {
+      margin-top: 15px;
+      width: 100%;
+      display: flex;
+      gap: 3em;
+      label {font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        flex-wrap: wrap;
+        input[type="range"] {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 100%;
+          cursor: pointer;
+          outline: none;
+          border-radius: 15px;
+          height: 6px;
+          margin-bottom: 5px;
+          background: #101010;
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 15px;
+            width: 15px;
+            background-color: #21d57a;
+            border-radius: 50%;
+            border: none;
+            transition: .2s ease-in-out;
+          }
+        }
+      }
+      .Contains {
+        margin-top: -25px;
+        background: transparent;
+        display: flex; flex-direction: row; gap: 1em;
+        flex-wrap: wrap;
+        label {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
