@@ -69,6 +69,7 @@
       }
       .Main {
         overflow: auto;
+        user-select: none;
         width: 325px;
         background: #101010;
         padding: 9px;
@@ -80,6 +81,17 @@
           background: #101010;
           border-radius: 4px;
           font-size: 15px;
+        }
+        strong {
+          position: absolute;
+          transition: 300ms;
+          right: 15px;
+          top: 0;
+          color: #21d57a;
+          bottom: 0;
+          margin: auto;
+          width: fit-content;
+          height: fit-content;
         }
       }
     }
